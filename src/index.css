@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #E2E2E2;
+    --text-primary: #111111;
+    --text-secondary: #777777;
+    --accent-red: #E54838;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Outlined typography for Swiss kinetic effect */
+.text-outline-black {
+  -webkit-text-stroke: 1.5px #111111;
+  color: transparent;
+}
+
+.text-outline-red {
+  -webkit-text-stroke: 1.5px #E54838;
+  color: transparent;
+}
+
+.text-outline-white {
+  -webkit-text-stroke: 1.5px #ffffff;
+  color: transparent;
+}
+
+/* Subtle grain overlay */
+.bg-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+/* Hide scrollbar for gallery and clean views */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #E2E2E2;
+}
+::-webkit-scrollbar-thumb {
+  background: #BBBBBB;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E54838;
+}
