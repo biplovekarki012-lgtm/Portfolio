@@ -282,7 +282,7 @@ export const About: React.FC<AboutProps> = ({ onCursorEnter, onCursorLeave }) =>
               {/* Geographic Tag */}
               <div className="absolute top-4 left-4 bg-[#E54838] text-white text-[10px] font-bold font-code px-2 py-0.5 uppercase tracking-widest flex items-center gap-1.5">
                 <MapPin className="w-3 h-3" />
-                <span>COLORADO ROCKIES, USA</span>
+                <span>TEXAS, USA</span>
               </div>
 
               {/* Bottom Card Title */}
@@ -307,7 +307,7 @@ export const About: React.FC<AboutProps> = ({ onCursorEnter, onCursorLeave }) =>
             {/* Sub-caption */}
             <div className="flex items-center justify-between text-xs font-code text-[#777777] border-b border-[#111111]/10 pb-2">
               <span>PHOTO: COLORADO PASS</span>
-              <span>DEV & CREATIVE TECH</span>
+              <span>BASED IN TEXAS, USA</span>
             </div>
           </div>
 
@@ -478,7 +478,7 @@ export const About: React.FC<AboutProps> = ({ onCursorEnter, onCursorLeave }) =>
                 </div>
 
                 <div className="pt-4 border-t border-[#111111]/15 flex justify-between items-center text-xs font-code text-[#777777]">
-                  <span>LOCATION: COLORADO, USA</span>
+                  <span>LOCATION: TEXAS, USA</span>
                   <a
                     href={`mailto:${PERSONAL_INFO.email}`}
                     className="text-[#E54838] font-bold hover:underline"

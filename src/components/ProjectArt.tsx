@@ -35,13 +35,13 @@ export const ProjectArt: React.FC<ProjectArtProps> = ({
             CREATOR
           </span>
           <span className="text-[10px] font-code text-white/80 tracking-widest">
-            39°44'N 105°49'W
+            31°58'N 99°54'W
           </span>
         </div>
 
         <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between">
           <div>
-            <p className="text-[10px] font-code text-[#E54838] tracking-widest uppercase">COLORADO, USA</p>
+            <p className="text-[10px] font-code text-[#E54838] tracking-widest uppercase">TEXAS, USA</p>
             <p className="text-sm font-bold text-white tracking-tight">BIPLOV KARKI</p>
           </div>
           <span className="text-2xl font-display font-extrabold text-white/30">{number}</span>

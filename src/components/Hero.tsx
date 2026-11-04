@@ -105,7 +105,7 @@ export const Hero: React.FC<HeroProps> = ({
           <span>·</span>
           <span>SYSTEMS & INTERACTION</span>
           <span>·</span>
-          <span className="text-[#E54838] font-bold">COLORADO</span>
+          <span className="text-[#E54838] font-bold">TEXAS, USA</span>
         </motion.div>
       </div>
 

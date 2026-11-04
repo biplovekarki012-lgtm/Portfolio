@@ -197,7 +197,7 @@ export const Navigation: React.FC<NavigationProps> = ({ onCursorEnter, onCursorL
 
             {/* Footer */}
             <div className="border-t border-white/10 pt-6 flex justify-between items-center text-xs font-code text-white/50">
-              <span>COLORADO, USA</span>
+              <span>TEXAS, USA</span>
               <span className="text-[#E54838]">COMPUTER SCIENCE</span>
             </div>
           </motion.div>

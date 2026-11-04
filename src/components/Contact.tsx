@@ -262,7 +262,7 @@ export const Contact: React.FC<ContactProps> = ({ onCursorEnter, onCursorLeave }
         <div className="pt-10 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-code text-white/40">
           <p>© 2026 BIPLOV KARKI — DESIGNED & DEVELOPED WITH CREATIVITY.</p>
           <div className="flex items-center gap-4">
-            <span>COLORADO, USA</span>
+            <span>TEXAS, USA</span>
             <span>·</span>
             <a href="#hero" className="hover:text-white transition-colors">
               BACK TO TOP ↑

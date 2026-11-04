@@ -39,6 +39,7 @@ export const CircularGallery: React.FC<CircularGalleryProps> = ({
   const dragStartXRef = useRef(0);
   const dragStartAngleRef = useRef(0);
   const lastXRef = useRef(0);
+  const lastDragSoundXRef = useRef(0);
   const velocityRef = useRef(0);
   const wheelTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -71,7 +72,7 @@ export const CircularGallery: React.FC<CircularGalleryProps> = ({
       const delta = e.deltaY * 0.06;
       targetAngleRef.current += delta;
       setTargetAngle(targetAngleRef.current);
-      soundManager.playTick(420, 0.015, 0.02);
+      soundManager.playSmoothDrag(delta);
 
       if (wheelTimerRef.current) clearTimeout(wheelTimerRef.current);
       wheelTimerRef.current = setTimeout(() => {
@@ -101,6 +102,7 @@ export const CircularGallery: React.FC<CircularGalleryProps> = ({
     dragStartXRef.current = e.clientX;
     dragStartAngleRef.current = targetAngleRef.current;
     lastXRef.current = e.clientX;
+    lastDragSoundXRef.current = e.clientX;
     velocityRef.current = 0;
 
     if (onCursorModeChange) onCursorModeChange('drag');
@@ -122,9 +124,11 @@ export const CircularGallery: React.FC<CircularGalleryProps> = ({
     targetAngleRef.current = newTarget;
     setTargetAngle(newTarget);
 
-    // Light audio tick when traversing card thresholds
-    if (Math.abs(totalDeltaX) % 50 < 4) {
-      soundManager.playTick(500, 0.015, 0.02);
+    // Smooth, velvety drag sound: triggers at calm, deliberate distance intervals (~120px)
+    // with smooth envelope and gentle pacing, so it never sounds fast or frantic
+    if (Math.abs(e.clientX - lastDragSoundXRef.current) >= 120) {
+      soundManager.playSmoothDrag(dx);
+      lastDragSoundXRef.current = e.clientX;
     }
   };
 
@@ -151,21 +155,21 @@ export const CircularGallery: React.FC<CircularGalleryProps> = ({
   };
 
   const rotateTo = (index: number) => {
-    soundManager.playTick(540, 0.03, 0.05);
+    soundManager.playSmoothDrag(2);
     const newAngle = index * anglePerCard;
     targetAngleRef.current = newAngle;
     setTargetAngle(newAngle);
   };
 
   const nextCard = () => {
-    soundManager.playTick(540, 0.03, 0.05);
+    soundManager.playSmoothDrag(2);
     const newAngle = targetAngleRef.current + anglePerCard;
     targetAngleRef.current = newAngle;
     setTargetAngle(newAngle);
   };
 
   const prevCard = () => {
-    soundManager.playTick(540, 0.03, 0.05);
+    soundManager.playSmoothDrag(-2);
     const newAngle = targetAngleRef.current - anglePerCard;
     targetAngleRef.current = newAngle;
     setTargetAngle(newAngle);

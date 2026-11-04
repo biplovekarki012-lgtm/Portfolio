@@ -16,7 +16,7 @@ export const PERSONAL_INFO = {
   email: 'biplovekarki012@gmail.com',
   github: 'https://github.com/biplovkarki',
   linkedin: 'https://linkedin.com/in/biplovkarki',
-  location: 'Colorado / United States',
+  location: 'Texas, USA',
   photoUrl: '/assets/aistudio/me_colorado_b7ee2f80.jpg',
   status: 'Open to Software Engineering & Creative Tech Roles',
   academicBio: {
@@ -132,7 +132,7 @@ export const PROJECTS: Project[] = [
     category: 'Software Development',
     year: '2026',
     tagline: 'Computer Science student, software developer, and creative technologist.',
-    description: 'Based in Colorado, blending mathematical rigor with cutting-edge visual experiences across systems software, full-stack, and robotics.',
+    description: 'Based in Texas, USA, blending mathematical rigor with cutting-edge visual experiences across systems software, full-stack, and robotics.',
     longDescription: 'Curiosity driven developer with a strong foundation in algorithmic problem solving, software engineering paradigms, and creative digital interfaces. Dedicated to architecting robust systems that are as elegant underneath the hood as they appear on the surface.',
     techStack: ['Computer Science', 'Systems Architecture', 'UI/UX Craft', 'Open Source', 'Creative Coding'],
     visualType: 'photo',
@@ -140,7 +140,7 @@ export const PROJECTS: Project[] = [
     metrics: [
       { label: 'Academic Focus', value: 'CompSci Major' },
       { label: 'Primary Languages', value: 'Java, C++, TS' },
-      { label: 'Location', value: 'Colorado, USA' }
+      { label: 'Location', value: 'Texas, USA' }
     ],
     highlights: [
       'Passionate about high-performance computing, systems engineering, and low-latency code',
