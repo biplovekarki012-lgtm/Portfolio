@@ -17,7 +17,7 @@ export const PERSONAL_INFO = {
   github: 'https://github.com/biplovkarki',
   linkedin: 'https://linkedin.com/in/biplovkarki',
   location: 'Texas, USA',
-  photoUrl: '/assets/aistudio/me_colorado_b7ee2f80.jpg',
+  photoUrl: './assets/aistudio/me_colorado_b7ee2f80.jpg',
   status: 'Open to Software Engineering & Creative Tech Roles',
   academicBio: {
     degree: 'B.S. in Computer Science',
