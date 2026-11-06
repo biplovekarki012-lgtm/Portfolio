@@ -14,8 +14,8 @@ export const PERSONAL_INFO = {
   bioIntro: "Hi, I'm Biplov Karki, a Computer Science student passionate about building meaningful digital experiences. I enjoy exploring the intersection of software development, technology, design, and creativity.",
   tagline: 'CREATING DIGITAL EXPERIENCES THROUGH CODE, CREATIVITY & INNOVATION.',
   email: 'biplovekarki012@gmail.com',
-  github: 'https://github.com/biplovkarki',
-  linkedin: 'https://linkedin.com/in/biplovkarki',
+  github: 'https://github.com/biplovekarki012-lgtm',
+  linkedin: 'https://www.linkedin.com/in/biplove-karki-a42123413/',
   location: 'Texas, USA',
   photoUrl: './assets/aistudio/me_colorado_b7ee2f80.jpg',
   status: 'Open to Software Engineering & Creative Tech Roles',
@@ -50,7 +50,7 @@ export const PROJECTS: Project[] = [
       'Wrote modular Python GPIO controller with interrupt-driven ultrasonic obstacle avoidance',
       'Calibrated PCA9685 16-channel 12-bit PWM servo driver over hardware I2C bus'
     ],
-    githubUrl: 'https://github.com/biplovkarki/pi-crawler-mini-robot',
+    githubUrl: 'https://github.com/biplovekarki012-lgtm/pi-crawler-mini-robot',
     liveDemoUrl: '#'
   },
   {
@@ -74,7 +74,7 @@ export const PROJECTS: Project[] = [
       'Simulated concurrent institutional market makers with geometric Brownian motion',
       'Interactive depth chart visualizer with instant liquidity shock stress-testing'
     ],
-    githubUrl: 'https://github.com/biplovkarki/aurafx-matching-engine',
+    githubUrl: 'https://github.com/biplovekarki012-lgtm/aurafx-matching-engine',
     liveDemoUrl: '#'
   },
   {
@@ -98,7 +98,7 @@ export const PROJECTS: Project[] = [
       'Surface Area Heuristic (SAH) spatial partitioning tree for ray intersections',
       'Interactive camera manipulation with real-time dielectric glass refractions'
     ],
-    githubUrl: 'https://github.com/biplovkarki/chronos-cpp-physics-engine',
+    githubUrl: 'https://github.com/biplovekarki012-lgtm/chronos-cpp-physics-engine',
     liveDemoUrl: '#'
   },
   {
@@ -122,7 +122,7 @@ export const PROJECTS: Project[] = [
       'Distributed undo/redo stack using vector clocks',
       'Export support for clean SVG, PNG, and production-ready React code components'
     ],
-    githubUrl: 'https://github.com/biplovkarki/aetheria-collaborative-canvas',
+    githubUrl: 'https://github.com/biplovekarki012-lgtm/aetheria-collaborative-canvas',
     liveDemoUrl: '#'
   },
   {
@@ -147,7 +147,7 @@ export const PROJECTS: Project[] = [
       'Experienced in building end-to-end full stack web platforms and hardware robotics integrations',
       'Always looking for ambitious software engineering challenges and collaborative innovation'
     ],
-    githubUrl: 'https://github.com/biplovkarki',
+    githubUrl: 'https://github.com/biplovekarki012-lgtm',
     liveDemoUrl: '#'
   }
 ];
